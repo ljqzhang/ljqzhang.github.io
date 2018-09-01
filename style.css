@@ -1,0 +1,70 @@
+body{
+    font-family:sans-serif;
+    font-size:1.75em;
+    line-height:130%;
+    color:#000;
+    background-color:#fff;
+    width:45%;
+    margin:1%;
+}
+b, #location{
+    font-family:serif;
+    font-size:1.15em;
+    font-weight:500;
+    color:#000;
+}
+a{
+    color:#000;
+    text-decoration:none;
+    font-family:serif;
+    font-size:1.15em;
+    font-weight:500;
+}
+a:hover{
+    filter:blur(4px);
+    text-decoration:none;
+    cursor:help;
+}
+#nav{
+    padding-top:50px;
+}
+#nav a{
+    font-size:1em;
+    font-family:sans-serif;
+    text-decoration:none;
+    filter:none;
+}
+#nav a:hover{
+    text-decoration:none;
+    border-bottom: 1px solid;
+    display: inline-block;
+    line-height:90%;
+    text-shadow:
+    2px 2px white,
+    2px -2px white,
+    -2px 2px white,
+    -2px -2px white;
+    cursor:alias;
+}
+div#email span#a {
+    display:inline;
+}
+div#email:hover span#a {
+    display:none;
+}
+div#email span#b {
+    display:none;
+}
+div#email:hover span#b {
+    display:inline;
+    text-decoration:none;
+    border-bottom: 1px solid;
+    display: inline-block;
+    line-height:90%;
+    text-shadow:
+    2px 2px white,
+    2px -2px white,
+    -2px 2px white,
+    -2px -2px white;
+    cursor:help;
+}

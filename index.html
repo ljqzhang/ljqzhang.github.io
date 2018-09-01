@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+    <title>Leslie Zhang</title> 
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <b>Leslie Zhang</b> is a UX content strategist at <a href="https://www.facebook.com">Facebook</a> in the San Francisco Bay Area.
+    She was previously at <a href="https://www.instagram.com" target="_blank">Instagram</a>, also in <br>the San Francisco Bay Area.
+    Her dream is <br>to one day live in <span id="location"></span> with a loved one, <br>a <a href="https://www.instagram.com/p/BnGV1vYgch6/?taken-by=shibainu.berry" target="_blank">shiba inu</a> and a closet full of <a href="http://www.lemaire.fr/en/" target="_blank">Lemaire</a>.
+    
+    <div id="nav">
+    <a href="https://www.twitter.com/ljqzhang" target="_blank">Twitter</a><br>
+    <a href="https://www.instagram.com/loveonthelefteye" target="_blank">Instagram</a><br>
+    <div id="email"><span id="a">Email</span><span id="b">ljqzhang@gmail.com</span></div>
+    </div>
+    
+    <script>
+    var text = ['Tokyo', 'New York', 'Paris', '? ? ?'];
+    function callMe(){
+        var myText = document.getElementById('location');
+        var curIdx = text.indexOf(myText.innerHTML);
+        myText.innerHTML = text[(curIdx+1)%text.length];
+    }
+    setInterval(callMe,2250);
+    </script>
+</body>
+</html>
